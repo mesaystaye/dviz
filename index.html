@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet and Mobile Connectivity Evolution</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="styled-box">
+            <h1 id="sceneTitle">Scene Title</h1>
+            <div id="scene2" class="container"></div>
+            <div id="scene3" class="container"></div>
+            <div id="scene4" class="container"></div>
+        </div>
+
+        <div id="sliderContainer" style="height: 60px;">
+            <div id="sliderContent">
+                <input type="range" id="yearSlider" min="2000" max="2020" step="1">
+                <span id="yearValue">2000</span>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <button class="nav-button" onclick="showScene(2)">2</button>
+            <button class="nav-button" onclick="showScene(3)">3</button>
+            <button class="nav-button" onclick="showScene(4)">4</button>
+        </div>
+    </div>
+
+    <div class="tooltip"></div>
+
+    <script src="country-codes.js" defer></script>
+    <script src="choropleth.js" defer></script>
+    <script src="scene2.js" defer></script>
+    <script src="scene3.js" defer></script>
+    <script src="scene4.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
